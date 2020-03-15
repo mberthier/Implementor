@@ -53,22 +53,57 @@ body {
   border-color: red;
 }
 
-.container {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 200px;
+.card-product {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.card-product img {
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  left: -10px;
+  bottom: 75px;
+}
+
+.card-product h2 {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  color: #3b80ff;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.card-product p {
+  font-size: 17px;
+  line-height: 1.4;
+  opacity: .7;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
+
+
+.card-product:hover {
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 
 #footer{
+  margin-top: 100px; 
   padding: 30px;
   background: rgb(30, 30, 30);
   color: lightgrey;
   text-align: center;
-}
-
-.card{
-  padding: 50px;
-  font-weight: lighter;
 }
 
 #footer a {
@@ -78,14 +113,4 @@ body {
 
 #footer a:hover {
   color: white;
-}
-
-
-
-.test {
-background-color: white;
-height: 300px;
-border-radius: 8px;
-box-shadow: 0 0 15px rgba(0,0,0,0.2);
-
 }

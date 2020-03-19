@@ -2,16 +2,22 @@ body {
   width: 100%;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #235952;
+  font-weight: bold;
+}
+
 #banner{
   padding-left: 20px;
   padding-right: 20px;
   height: 100vh;
-  color: white;
   text-shadow: 1px 1px 5px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
@@ -24,7 +30,7 @@ body {
   left: 0;
   width: 100%;
   height: 120%;
-  background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%), url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)");
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%), url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)");
   background-size: cover;
   transform: skewY(-5deg);
   transform-origin: top left;
@@ -39,18 +45,21 @@ body {
 
 #banner p {
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 30px;
   font-weight: lighter;
+  margin-top: 30px;
 }
 
 #banner a {
-  margin-top: 20px;
+  margin: 30px;
+  color: white;
 }
 
+
 #banner a:hover {
-  background-color: red;
-  border-color: red;
+  background-color: rgb(191, 32, 45);
+
 }
 
 .container {
@@ -72,7 +81,7 @@ body {
   height: 75px;
   width: 75px;
   position: absolute;
-  left: -10px;
+  left: 10px;
   bottom: 75px;
 }
 
@@ -89,6 +98,7 @@ body {
 }
 
 .card-product p {
+  color:color: #434e52;
   font-size: 17px;
   line-height: 1.4;
   opacity: .7;

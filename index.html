@@ -34,6 +34,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>      
@@ -53,14 +56,14 @@
 
 
 <!--Beginning of the container-->
-  <div class="container">
+  <div id="services" class="container">
     <div>
-      <h2 id="services">Our Services:</h2>
+      <h2>Our Services:</h2>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-lg-6">
           <div class="card-product">
-            <img src="parrot.svg" />
+            <img src="coding.svg" />
             <div class="card-product-infos">
               <h2>Script Integration</h2>
               <p>Implementation of any <strong>third-party codes</strong> on your website.</p>
@@ -70,7 +73,7 @@
   
      <div class="col-xs-12 col-sm-6 col-lg-6">
         <div class="card-product">
-          <img src="lion.svg" />
+          <img src="business-and-finance.svg" />
           <div class="card-product-infos">
             <h2>Website Audit</h2>
             <p>Full website review and suggestions of <strong>best practices</strong>.</p>
@@ -81,7 +84,7 @@
 
       <div class="col-xs-12 col-sm-6 col-lg-6">
         <div class="card-product">
-          <img src="wild-life (1).svg" />
+          <img src="ui.svg" />
           <div class="card-product-infos">
             <h2>Ongoing Optimization</h2>
             <p>Continous <strong>review & improvement</strong> of your page layout.</p>
@@ -91,7 +94,7 @@
      
      <div class="col-xs-12 col-sm-6 col-lg-6">
         <div class="card-product">
-          <img src="wild-life.svg" />
+          <img src="files-and-folders.svg" />
           <div class="card-product-infos">
             <h2>Custom development</h2>
             <p>Strategy & execution of ad-hoc <strong>development task</strong>.</p>
@@ -101,36 +104,39 @@
     </div>
   </div> 
 <!--End of the container-->
-  <section>
-    <div></div>
+
+<!--Beginning of the Contact section-->
+  <section id="contact">
+      <form>
+        <h2 >Contact us</h2>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Full Name</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indiana Jones">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Service required</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Script Integration</option>
+            <option>Website Audit</option>
+            <option>Ongoing Optimization</option>
+            <option>Custom development</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Tell us a bit more about your project</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
   </section>
+  <!--End of the Contact section-->
 
 
-  <form>
-    <h2 class="contact">Contact us</h2>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Full Name</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indiana Jones">
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Service required</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>Script Integration</option>
-        <option>Website Audit</option>
-        <option>Ongoing Optimization</option>
-        <option>Custom development</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Tell us a bit more about your project</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-danger">Submit</button>
-  </form>
+
 
 
 <!--Beginning of the footer-->
